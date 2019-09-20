@@ -10,17 +10,17 @@ import { MessagesComponent } from './messages/messages.component';
 import { DashboardComponent } from './dashboard/dashboard.component'; // <-- NgModel lives here
 
 @NgModule({
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule
+  ],
   declarations: [
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,
     MessagesComponent,
     DashboardComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule, 
-    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
